@@ -1,0 +1,27 @@
+//Program to print 10 prime numbers after a given number
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+void main()
+{
+int num , count=0;
+clrscr();
+printf("Enter the number from which you want to print 10 prime numbers :");
+scanf("%d",&num);
+while(count<10)
+{
+	for(int i =2; i<num ; i++)
+	{
+		if(num%i==0)
+		break;
+	}
+	if(num==i)
+	{
+		printf("%d\n",num);
+		count++;
+	}
+	num++;
+}
+getch();
+}
