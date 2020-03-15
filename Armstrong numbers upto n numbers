@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+int num,num2,rem,i,count,sum,arm_count=0;
+clrscr();
+printf("Enter the starting number : ");
+scanf("%d",&num);
+printf("Enter how many armstrong numbers you want to print ");
+scanf("%d",&num2);
+while(arm_count<num2)
+{
+	sum=0;
+	count=0;
+	for(i=num ; i>0 ; i/=10)
+		count++;
+
+	for(i=num ; i>0 ; i/=10)
+	{
+		rem=i%10;
+		sum=sum+pow(rem,count);
+	}
+	if(sum==num)
+	{
+		printf("Your %d Armstrong number is : %d\n",arm_count+1,num);
+		arm_count++;
+	}
+	num++;
+}
+getch();
+}
