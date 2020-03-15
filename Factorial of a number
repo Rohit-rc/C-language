@@ -1,0 +1,19 @@
+// Program to find a factorial of a number 
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+int num,i;
+long int fact=1;
+clrscr();
+printf("Enter the number : ");
+scanf("%d",&num);
+
+for(i=1 ; i<=num ; i++)
+{
+	fact=fact*i;
+}
+printf("Your factorial is %li",fact);
+getch();
+}
