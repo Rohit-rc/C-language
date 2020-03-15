@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+int num;
+clrscr();
+printf("Enter the number : ");
+scanf("%i",&num);
+
+if(num%2==0){                           //checking whether if the remainder is zero or not   
+	printf("Even Number ");
+}
+else{
+printf("Odd Number ");
+}
+getch();
+}
