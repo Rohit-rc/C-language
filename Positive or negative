@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+int num;
+clrscr();
+printf("Enter the Number to check Positive or negative");
+scanf("%i",&num);
+if(num>=0)
+	printf("Number is Positive");
+else
+	printf("Number is negative");
+
+getch();
+}
