@@ -5,7 +5,7 @@ void main()
 int num1,num2, sum=0;
 clrscr();
 printf("Enter the Number 1: ");
-scanf("%i",&num2);
+scanf("%i",&num1);
 printf("Enter the Number 2: ");
 scanf("%i",&num2);
 for (int i=num1 ; i<=num2 ; i++)
