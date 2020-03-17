@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num1,num2;
+clrscr();
+printf("Enter the Number 1 ");
+scanf("%d",&num1);
+printf("Enter the Number 2 ");
+scanf("%d",&num3);
+int max=num1>=num2?num1:num2;
+printf("Your Greatest is is %d",max);
+getch();
+}
