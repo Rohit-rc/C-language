@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num;
+clrscr();
+printf("Enter the Year : ");
+scanf("%i",&num);
+if((num%4==0 && num%100!=0)||num%400==0)
+	printf("Year is leap ");
+else
+	printf("Year is not leap");
+getch();
+}
