@@ -1,0 +1,27 @@
+//To check Strong number i.e. The sum of Factorial of each digit is equal to Number itself.
+#include<stdio.h>
+#include<conio.h>
+int fact(int num)
+{
+int val=1;
+for(int i=1 ; i<=num ; i++)
+	val*=i;
+return val;
+}
+void main()
+{
+int num,sum=0,rem;
+clrscr();
+printf("Enter the number to check whether strong or not :");
+scanf("%d",&num);
+for(int i=num ; i>0 ; i/=10)
+{
+	rem=i%10;
+	sum=sum+fact(rem);
+}
+if(sum==num)
+	printf("Number is Strong ");
+else
+	printf("Number is not Strong");
+getch();
+}
