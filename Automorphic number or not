@@ -1,0 +1,19 @@
+//Program to check whether a number is Automorphic number or not. An automorphic number is a number whose square ends with the number itself.
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+void main()
+{
+int num;
+clrscr();
+printf("Enter the number to check Automorphic number : ");
+scanf("%d",&num);
+if(num/10!=0)
+	printf("Enter the valid character "),exit(0);
+
+if(((num*num)%10)==num)
+	printf("Automorphic");
+else
+	printf("Not Automorphic");
+getch();
+}
