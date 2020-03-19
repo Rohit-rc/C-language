@@ -1,0 +1,18 @@
+//Program to check whether a number is a Harshad number or not (Niven number) is discussed here. Harshad Number is an integer that is divisible by the sum of its digits.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+long int num;
+int sum=0;
+clrscr();
+printf("Enter the Number : ");
+scanf("%li",&num);
+for (long int i=num ; i>0 ; i=i/10)
+	sum=sum+(i%10);
+if(sum==num)
+    printf("Harshad Number");
+else
+    printf("Non Harshad number");
+getch();
+}
