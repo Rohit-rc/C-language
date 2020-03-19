@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+#inlcude<math.h>
+void main()
+{
+int base, exponent;
+printf(“Enter the base value : \n“);
+scanf(“%d”, &base);
+printf(“Enter the exponent value : “);
+scanf(“%d”, &exponent);
+int result = pow(base,exponent);
+printf(“\nResultant value : %d\n”, result);
+getch();
+}
