@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */     
+    int num, isprime=1;
+    long int number_of_prime=0;
+    int prime_array[10000], arr[1000];
+    scanf("%d",&num);
+    for(int i=0 ; i<num ; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    long int n=2;
+    while(number_of_prime<10000)
+    {
+        isprime=1;
+        for(int i2=2 ; i2<=sqrt(n) ; i2++)
+        {
+            if(n%i2==0)
+            {
+                isprime=0;
+                break;
+            }
+        }
+        if(isprime==1)
+        {
+            prime_array[number_of_prime]=n;
+            number_of_prime++;
+        }
+        n++;
+    }
+    for(int i=0 ; i<num ; i++)
+    {
+        printf("%d\n",prime_array[ arr[i] -1]);
+    }
+
+
+    return 0;
+}
